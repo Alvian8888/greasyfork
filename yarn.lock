@@ -83,10 +83,10 @@
   resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-7.0.4.tgz#7fe5387d2d82b0547fdfc6667b424ec119c86b1e"
   integrity sha512-UY9yQxBvtqXzXScslgPwZoQd16T0+z3P6BQS4lZDJFg5xVuMIgHkHQI6dhyWEt5l/qwbGaYX+YiZu6J+oxWPOw==
 
-ace-builds@^1.4.12:
-  version "1.12.0"
-  resolved "https://registry.yarnpkg.com/ace-builds/-/ace-builds-1.12.0.tgz#7bec18c9a6dc316d2ec2751b430def2f09168003"
-  integrity sha512-jKRKAgPVc+1iPWZaJQMT835zL4nivQqvpoCih1zRMFyQsJgfgQhw3oSUsL469X/DmPLm1z5kkhnrhquuhpwkXw==
+ace-builds@^1.15.0:
+  version "1.15.3"
+  resolved "https://registry.yarnpkg.com/ace-builds/-/ace-builds-1.15.3.tgz#9e35d174acb80297c6f236be2c8bb8574786f719"
+  integrity sha512-hq8+4DfQcUYcUyAF3vF7UoGFXwNxXST5A2IdarUOp9/Xg1thWTfxusPI2HAlTvXRTVjLDQOj9O34uPoTehEs0A==
 
 acorn@^8.5.0:
   version "8.8.0"
