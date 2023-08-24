@@ -4,7 +4,7 @@ ruby '3.1.2'
 
 gem 'bootsnap'
 gem 'daemons'
-gem 'devise'
+gem 'devise', '>= 4.9.0'
 gem 'devise-i18n', git: 'https://github.com/tigrish/devise-i18n.git'
 gem 'diffy'
 gem 'google-analytics-data'
@@ -15,20 +15,20 @@ gem 'public_suffix'
 gem 'puma'
 gem 'puma_worker_killer'
 gem 'rack-attack'
-gem 'rails', '~> 7.0.0'
-gem 'rails-i18n'
+gem 'rails', '~> 7.0.7', '>= 7.0.7.1'
+gem 'rails-i18n', '>= 7.0.5'
 gem 'redcarpet'
 gem 'regexp_parser'
 gem 'sanitize'
-gem 'sentry-rails'
+gem 'sentry-rails', '>= 5.3.0'
 gem 'sentry-ruby'
 gem 'sidekiq'
-gem 'strip_attributes'
+gem 'strip_attributes', '>= 1.13.0'
 gem 'thinking-sphinx', git: 'https://github.com/pat/thinking-sphinx'
 gem 'transifex-ruby'
 gem 'ts-sidekiq-delta'
 gem 'user_agent_parser'
-gem 'vite_rails'
+gem 'vite_rails', '>= 3.0.13'
 gem 'will_paginate'
 gem 'will-paginate-i18n'
 
@@ -46,7 +46,7 @@ gem 'omniauth-gitlab'
 gem 'omniauth-google-oauth2', '>= 0.4.1'
 gem 'omniauth-rails_csrf_protection'
 
-gem 'active_storage_validations'
+gem 'active_storage_validations', '>= 1.0.0'
 gem 'aws-sdk-s3', require: false
 gem 'image_processing'
 
@@ -67,12 +67,12 @@ group :development do
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'capistrano-sidekiq'
-  gem 'erb_lint', require: false
+  gem 'erb_lint', '>= 0.1.2', require: false
   gem 'listen'
   gem 'rubocop'
   gem 'rubocop-minitest', require: false
   gem 'rubocop-performance', require: false
-  gem 'rubocop-rails', require: false
+  gem 'rubocop-rails', '>= 2.15.0', require: false
 end
 
 group :test do
