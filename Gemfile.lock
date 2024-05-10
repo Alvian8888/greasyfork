@@ -112,6 +112,7 @@ GEM
       aws-sigv4 (~> 1.4)
     aws-sigv4 (1.5.0)
       aws-eventstream (~> 1, >= 1.0.2)
+    base64 (0.2.0)
     bcrypt (3.1.17)
     better_errors (2.9.1)
       coderay (>= 1.0.0)
@@ -169,7 +170,7 @@ GEM
       xpath (~> 3.2)
     childprocess (4.1.0)
     coderay (1.1.3)
-    concurrent-ruby (1.1.10)
+    concurrent-ruby (1.2.3)
     connection_pool (2.2.5)
     crass (1.0.6)
     daemons (1.4.1)
@@ -194,7 +195,7 @@ GEM
       rainbow
       rubocop
       smart_properties
-    erubi (1.11.0)
+    erubi (1.12.0)
     faraday (1.10.2)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
@@ -269,7 +270,7 @@ GEM
     hashie (5.0.0)
     hiredis (0.6.3)
     html_tokenizer (0.0.7)
-    i18n (1.12.0)
+    i18n (1.14.5)
       concurrent-ruby (~> 1.0)
     image_processing (1.12.2)
       mini_magick (>= 4.9.5, < 5)
@@ -287,9 +288,9 @@ GEM
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    loofah (2.18.0)
+    loofah (2.22.0)
       crass (~> 1.0.2)
-      nokogiri (>= 1.5.9)
+      nokogiri (>= 1.12.0)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
     marcel (1.0.2)
@@ -299,10 +300,10 @@ GEM
     middleware (0.1.0)
     mini_magick (4.11.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.0)
+    mini_portile2 (2.8.6)
     mini_racer (0.6.2)
       libv8-node (~> 16.10.0.0)
-    minitest (5.16.3)
+    minitest (5.22.3)
     minitest-around (0.5.0)
       minitest (~> 5.0)
     mocha (1.13.0)
@@ -329,10 +330,10 @@ GEM
       timeout
     net-ssh (6.1.0)
     nio4r (2.5.8)
-    nokogiri (1.13.9)
-      mini_portile2 (~> 2.8.0)
+    nokogiri (1.16.4)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.13.9-x86_64-linux)
+    nokogiri (1.16.4-x86_64-linux)
       racc (~> 1.4)
     oauth2 (1.4.9)
       faraday (>= 0.17.3, < 3.0)
@@ -340,7 +341,7 @@ GEM
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (>= 1.2, < 3)
-    omniauth (2.1.0)
+    omniauth (2.1.2)
       hashie (>= 3.4.6)
       rack (>= 2.2.3)
       rack-protection
@@ -358,7 +359,7 @@ GEM
     omniauth-oauth2 (1.7.2)
       oauth2 (~> 1.4)
       omniauth (>= 1.9, < 3)
-    omniauth-rails_csrf_protection (1.0.1)
+    omniauth-rails_csrf_protection (1.0.2)
       actionpack (>= 4.2)
       omniauth (~> 2.0)
     orm_adapter (0.5.0)
@@ -372,15 +373,16 @@ GEM
     puma_worker_killer (0.3.1)
       get_process_mem (~> 0.2)
       puma (>= 2.7)
-    racc (1.6.0)
-    rack (2.2.4)
+    racc (1.7.3)
+    rack (2.2.9)
     rack-attack (6.6.1)
       rack (>= 1.0, < 3)
-    rack-protection (2.2.0)
-      rack
+    rack-protection (3.2.0)
+      base64 (>= 0.1.0)
+      rack (~> 2.2, >= 2.2.4)
     rack-proxy (0.7.4)
       rack
-    rack-test (2.0.2)
+    rack-test (2.1.0)
       rack (>= 1.3)
     rails (7.0.4)
       actioncable (= 7.0.4)
@@ -396,11 +398,13 @@ GEM
       activesupport (= 7.0.4)
       bundler (>= 1.15.0)
       railties (= 7.0.4)
-    rails-dom-testing (2.0.3)
-      activesupport (>= 4.2.0)
+    rails-dom-testing (2.2.0)
+      activesupport (>= 5.0.0)
+      minitest
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.4.3)
-      loofah (~> 2.3)
+    rails-html-sanitizer (1.6.0)
+      loofah (~> 2.21)
+      nokogiri (~> 1.14)
     rails-i18n (7.0.3)
       i18n (>= 0.7, < 2)
       railties (>= 6.0.0, < 8)
@@ -502,7 +506,7 @@ GEM
       sidekiq (>= 2.5.4)
       sidekiq-unique-jobs (>= 7.0.0)
       thinking-sphinx (>= 3.1.0)
-    tzinfo (2.0.5)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unf (0.1.4)
       unf_ext
@@ -573,7 +577,7 @@ DEPENDENCIES
   omniauth-github
   omniauth-gitlab
   omniauth-google-oauth2 (>= 0.4.1)
-  omniauth-rails_csrf_protection
+  omniauth-rails_csrf_protection (>= 1.0.2)
   public_suffix
   puma
   puma_worker_killer
@@ -609,4 +613,4 @@ RUBY VERSION
    ruby 3.1.2p20
 
 BUNDLED WITH
-   2.3.11
+   2.3.26
