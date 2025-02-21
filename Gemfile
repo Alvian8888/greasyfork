@@ -70,9 +70,9 @@ group :development do
   gem 'erb_lint', require: false
   gem 'listen'
   gem 'rubocop'
-  gem 'rubocop-minitest', require: false
-  gem 'rubocop-performance', require: false
-  gem 'rubocop-rails', require: false
+  gem 'rubocop-minitest', '>= 0.37.1', require: false
+  gem 'rubocop-performance', '>= 1.24.0', require: false
+  gem 'rubocop-rails', '>= 2.30.0', require: false
 end
 
 group :test do
