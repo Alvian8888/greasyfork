@@ -69,7 +69,7 @@ group :development do
   gem 'capistrano-sidekiq'
   gem 'erb_lint', require: false
   gem 'listen'
-  gem 'rubocop'
+  gem 'rubocop', '>= 1.66.0'
   gem 'rubocop-minitest', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
