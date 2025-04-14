@@ -373,9 +373,9 @@ GEM
       get_process_mem (~> 0.2)
       puma (>= 2.7)
     racc (1.6.0)
-    rack (2.2.4)
-    rack-attack (6.6.1)
-      rack (>= 1.0, < 3)
+    rack (2.2.7)
+    rack-attack (6.7.0)
+      rack (>= 1.0, < 4)
     rack-protection (2.2.0)
       rack
     rack-proxy (0.7.4)
@@ -577,7 +577,7 @@ DEPENDENCIES
   public_suffix
   puma
   puma_worker_killer
-  rack-attack
+  rack-attack (>= 6.7.0)
   rails (~> 7.0.0)
   rails-i18n
   rails-observers
@@ -609,4 +609,4 @@ RUBY VERSION
    ruby 3.1.2p20
 
 BUNDLED WITH
-   2.3.11
+   2.3.26
