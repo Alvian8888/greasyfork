@@ -67,12 +67,12 @@ group :development do
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'capistrano-sidekiq'
-  gem 'erb_lint', require: false
+  gem 'erb_lint', '>= 0.1.2', require: false
   gem 'listen'
-  gem 'rubocop'
-  gem 'rubocop-minitest', require: false
-  gem 'rubocop-performance', require: false
-  gem 'rubocop-rails', require: false
+  gem 'rubocop', '>= 1.28.2'
+  gem 'rubocop-minitest', '>= 0.20.0', require: false
+  gem 'rubocop-performance', '>= 1.14.0', require: false
+  gem 'rubocop-rails', '>= 2.15.0', require: false
 end
 
 group :test do
@@ -80,6 +80,6 @@ group :test do
   gem 'capybara'
   gem 'minitest-around'
   gem 'mocha'
-  gem 'selenium-webdriver'
-  gem 'webdrivers'
+  gem 'selenium-webdriver', '>= 4.2.0'
+  gem 'webdrivers', '>= 5.1.0'
 end
