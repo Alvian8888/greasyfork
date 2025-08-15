@@ -15,7 +15,7 @@ gem 'public_suffix'
 gem 'puma'
 gem 'puma_worker_killer'
 gem 'rack-attack'
-gem 'rails', '~> 7.0.0'
+gem 'rails', '~> 7.1.5', '>= 7.1.5.2'
 gem 'rails-i18n'
 gem 'redcarpet'
 gem 'regexp_parser'
@@ -46,7 +46,7 @@ gem 'omniauth-gitlab'
 gem 'omniauth-google-oauth2', '>= 0.4.1'
 gem 'omniauth-rails_csrf_protection'
 
-gem 'active_storage_validations'
+gem 'active_storage_validations', '>= 1.0.0'
 gem 'aws-sdk-s3', require: false
 gem 'image_processing'
 
